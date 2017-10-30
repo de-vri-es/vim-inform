@@ -38,6 +38,8 @@ syn keyword informKeywords CALL JUMP
 syn keyword informKeywords PAUSE ABORT JUMP
 
 syn keyword informIdentifier SET GETS GETARG GETE SETE
+syn keyword informIdentifier INC DEC ADD SUB
+syn keyword informIdentifier MULMAT CNVRT
 syn keyword informIdentifier MSG
 
 " Operators
