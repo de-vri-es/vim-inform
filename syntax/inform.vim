@@ -36,13 +36,15 @@ syn match informIdentifier "\<[a-zA-Z_][a-zA-Z0-9_]*\>" contained
 syn keyword informKeywords NOP END
 syn keyword informKeywords IFTHEN IFTHENEXP ENDIF
 syn keyword informKeywords WHILE WHILEEXP ENDWHILE
-syn keyword informKeywords CALL JUMP
+syn keyword informKeywords CALL JUMP RET
 syn keyword informKeywords PAUSE ABORT JUMP
 
 syn keyword informIdentifier SET GETS GETARG GETE SETE
 syn keyword informIdentifier INC DEC ADD SUB
 syn keyword informIdentifier MULMAT CNVRT
 syn keyword informIdentifier MSG
+syn keyword informIdentifier WAIT
+syn keyword informIdentifier MOVJ MOVL MOVC MOVS MOVI
 
 " Operators
 syn keyword informOperators > = >= <= <>
