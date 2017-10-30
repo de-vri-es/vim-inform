@@ -33,8 +33,12 @@ syn keyword informTodo TODO contained
 syn match informIdentifier "\<[a-zA-Z_][a-zA-Z0-9_]*\>" contained
 
 " Keywords.
-syn keyword informKeywords IFTHEN IFTHENEXP WHILE WHILEEXP CALL
-syn keyword informKeywords SET GETS GETARG
+syn keyword informKeywords IFTHEN IFTHENEXP WHILE WHILEEXP ENDIF END NOP
+syn keyword informKeywords CALL JUMP
+syn keyword informKeywords PAUSE ABORT JUMP
+
+syn keyword informIdentifier SET GETS GETARG GETE SETE
+syn keyword informIdentifier MSG
 
 " Operators
 syn keyword informOperators > = >= <= <>
@@ -58,6 +62,8 @@ syn match informNumber '\<\d[[:digit:]]*[eE][\-+]\=\d\+'
 syn match informNumber '\<[-+]\=\d[[:digit:]]*\.\d*[eE][\-+]\=\d\+'
 syn match informNumber '\<\d[[:digit:]]*\.\d*[eE][\-+]\=\d\+'
 
+syn region informtring start="\"" skip="\\" end="\""
+
 " Link inform groups to default groups.
 hi def link informComments    Comment
 hi def link informTodo        Todo
@@ -65,15 +71,10 @@ hi def link informKeywords    Keyword
 hi def link informOperators   Operator
 hi def link informIdentifier  Identifier
 
-hi def link informLabelText   String
-hi def link informLabelNumber Number
 hi def link informLabel       PreProc
-hi def link informLabelError  Error
 
 hi def link informString      String
 hi def link informBool        Constant
 hi def link informNumber      Number
-
-hi def link informSemicolonError Error
 
 let b:current_syntax = "inform"
