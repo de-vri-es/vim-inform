@@ -66,7 +66,7 @@ function GetInformIndent(lnum)
 	endif
 
 	" Unindent elif/else/end.
-	if line =~ '^\s*\(elif\|else\|end\)\>'
+	if line =~ '^\s*\(ELSE\|ELSEIF\|ELSEIFEXP\|ENDIF\|ENDWHILE\)\>'
 		let add_indent = add_indent - shiftwidth()
 	endif
 
