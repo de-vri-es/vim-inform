@@ -33,7 +33,9 @@ syn keyword informTodo TODO contained
 syn match informIdentifier "\<[a-zA-Z_][a-zA-Z0-9_]*\>" contained
 
 " Keywords.
-syn keyword informKeywords IFTHEN IFTHENEXP WHILE WHILEEXP ENDIF END NOP
+syn keyword informKeywords NOP END
+syn keyword informKeywords IFTHEN IFTHENEXP ENDIF
+syn keyword informKeywords WHILE WHILEEXP ENDWHILE
 syn keyword informKeywords CALL JUMP
 syn keyword informKeywords PAUSE ABORT JUMP
 
