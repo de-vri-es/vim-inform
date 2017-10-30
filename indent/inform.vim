@@ -26,7 +26,7 @@ setlocal indentexpr=GetInformIndent(v:lnum)
 setlocal indentkeys=:0$,o,O,=else,=elif,=end
 setlocal nosmartindent
 
-if exists("*GetURScriptIndent")
+if exists("*GetInformIndent")
 	finish
 endif
 
