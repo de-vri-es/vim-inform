@@ -1,9 +1,8 @@
-" Vim filetype plugin file
+" Vim filetype plugin file for the Yaskawa Inform robot programming language.
 " Language:     inform
 " Maintainer:   Maarten de Vries <maarten@de-vri.es>
-" Last Change:  2015 Jan 18
 " License:      GPLv3
-" Copyright:    2015 - Maarten de Vries <maarten@de-vri.es>
+" Copyright:    2017 - Maarten de Vries <maarten@de-vri.es>
 "
 " This program is free software: you can redistribute it and/or modify
 " it under the terms of the GNU General Public License as published by
