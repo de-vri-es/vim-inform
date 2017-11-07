@@ -34,6 +34,7 @@ syn match informIdentifier "\<[a-zA-Z_][a-zA-Z0-9_]*\>" contained
 " Keywords.
 syn keyword informKeywords NOP END
 syn keyword informKeywords IFTHEN IFTHENEXP ENDIF
+syn keyword informKeywords ELSE ELSEIF ELSEIFEXP
 syn keyword informKeywords WHILE WHILEEXP ENDWHILE
 syn keyword informKeywords CALL JUMP RET
 syn keyword informKeywords PAUSE ABORT JUMP
