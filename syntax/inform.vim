@@ -40,7 +40,7 @@ syn keyword informKeywords CALL JUMP RET
 syn keyword informKeywords PAUSE ABORT JUMP
 
 syn keyword informIdentifier SET GETS GETARG GETE SETE
-syn keyword informIdentifier INC DEC ADD SUB
+syn keyword informIdentifier INC DEC ADD SUB MUL DIV
 syn keyword informIdentifier MULMAT CNVRT INVMAT
 syn keyword informIdentifier MSG
 syn keyword informIdentifier WAIT
